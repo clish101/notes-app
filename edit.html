@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+
+            <h1 class="header__title">Notes App</h1>
+            <h2 class="header__subtitle">Take notes and forget</h2>
+        </div>
+    </header>
+
+    <div class="actions">
+        <div class="actions__container actions__container--spaced">
+
+            <p><a href="./index.html">Home</a></p>
+            <span id="show-time"></span>
+        </div>
+    </div>
+    <div class="container">
+
+
+
+        <input type="text" id="edit-input" class="title-input" />
+
+        <textarea style="margin-bottom:-5px" class="body-input" rows="5" cols="30" name="" id="edit-textarea"
+            placeholder="Enter note text"></textarea>
+
+        <button id="remove-note" class="button button--secondary">Remove Note</button>
+    </div>
+    <script src="./scripts/uuidv4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous"></script>
+    <script src="./scripts/notes-functions.js"></script>
+    <script src="./scripts/note-edit.js"></script>
+</body>
+
+</html>

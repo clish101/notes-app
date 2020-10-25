@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+
+            <h1 class="header__title">Notes App</h1>
+            <h2 class="header__subtitle">Take notes and forget</h2>
+        </div>
+    </header>
+
+    <div class="actions">
+        <div class="actions__container">
+
+            <input id="filter-notes" type="text" placeholder="filter notes" class="input" />
+            <select name="" id="selection" class="dropdown">
+                <option value="byEdited" selected>Sort by Last Edited</option>
+                <option value="byCreated">Sort by recently created</option>
+                <option value="alphabetically">Sort alphabetically</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+
+
+        <div id='Search'></div>
+        <label>
+            <input type="checkbox" name="firstName" id="checking"> Hide Completed
+        </label>
+        <div style="margin-top: 5px;">
+
+            <form id="formation">
+                <input type="text" name="newNote" id="" placeholder="new note" class="input">
+                <button id="add-note" type="submit" class="button">click to add note</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts/uuidv4.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous"></script>
+
+    <script src="./scripts/notes-functions.js"></script>
+    <script src="./scripts/notes-app.js"></script>
+
+</body>
+
+</html>
